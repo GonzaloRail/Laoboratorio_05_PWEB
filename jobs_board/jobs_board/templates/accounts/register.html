@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Registrarse</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Registrarse</button>
-  </form>
+<div class = "custom-container2"> 
+  <div class = "content">
+    <h1>Regístrate</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>  
+</div>
 {% endblock %}

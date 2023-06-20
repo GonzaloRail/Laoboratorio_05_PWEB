@@ -1,3 +1,5 @@
+/*BASE.html*/ 
+
 .button {
   margin-top: 10px;
   display: inline-block;
@@ -82,6 +84,105 @@ h1 span.cp2 {
 img {
   width: 150px;
   height: 150px;
+}
+
+/*ACCOUNTS (login.html and register.html)*/
+
+.custom-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  height: 100vh;
+}
+
+div.content {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgb(0, 163, 46);
+  border-radius: 8px;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  height: 720px;
+  width: 645px;
+  position: absolute;
+}
+
+div.content h1{
+  margin-top: -55px;
+  font-family: 'Segoe UI';
+  color: rgb(0, 163, 46);
+}
+
+div.content label {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(0, 163, 46);
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  margin-left: -65px;
+  margin-bottom: 5px;
+}
+
+.input-field , input#id_password1, input#id_password2{
+  border: none;
+  border-bottom: 4px solid rgb(0, 163, 46);
+  outline: none;
+  background-color: transparent;
+  margin-left: -60px;
+  width: 600px;
+  padding: 5px;
+  transition: background-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+.input-field:focus, input#id_password1:focus, input#id_password1:focus {
+  background-color: white;
+  border-bottom-color: rgb(255, 234, 2);
+}
+
+div.content button {
+  font-family: 'Segoe UI';
+  font-weight: bolder;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(0, 163, 46);
+  border: 3px solid rgb(0, 163, 46);
+  border-radius: 2px;
+  color: white;
+  transition: background-color 0.4s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+div.content button:hover {
+  background-color: rgb(255, 234, 2);
+  border-color: rgb(255, 234, 2);
+}
+
+div.content ul li {
+  font-weight: bold;
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  color: red;
+  transition: color 0.1s ease-in-out;
+}
+
+div.content ul li:hover {
+  color: rgb(255, 234, 2);
+}
+
+span.helptext {
+  font-weight: bold;
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  color: red;
+  transition: color 0.1s ease-in-out;
+}
+
+span.helptext:hover {
+  color: rgb(255, 234, 2);
 }
 
 /*BACKGROUND*/
