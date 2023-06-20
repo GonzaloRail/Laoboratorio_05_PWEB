@@ -3,8 +3,8 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import CustomUser
 
 class LoginForm(forms.Form):
-    email = forms.EmailField(label='Email', widget=forms.TextInput(attrs={'class': 'input-field'}))
-    password = forms.CharField(label='Contraseña', widget=forms.PasswordInput(attrs={'class': 'input-field'}))
+    email = forms.EmailField(label='Email', widget=forms.TextInput(attrs={'class': 'input-field2'}))
+    password = forms.CharField(label='Contraseña', widget=forms.PasswordInput(attrs={'class': 'input-field2'}))
 
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField(label='Email', widget=forms.TextInput(attrs={'class': 'input-field'}))

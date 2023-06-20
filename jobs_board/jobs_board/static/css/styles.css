@@ -86,7 +86,7 @@ img {
   height: 150px;
 }
 
-/*ACCOUNTS (login.html and register.html)*/
+/*register.html*/
 
 .custom-container2 {
   display: flex;
@@ -107,7 +107,7 @@ div.content {
   position: absolute;
 }
 
-div.content h1{
+div.content h1 { 
   margin-top: -55px;
   font-family: 'Segoe UI';
   color: rgb(0, 163, 46);
@@ -183,6 +183,71 @@ span.helptext {
 
 span.helptext:hover {
   color: rgb(255, 234, 2);
+}
+
+/*login.html*/
+
+div.content2 {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgb(0, 163, 46);
+  border-radius: 8px;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  height: 330px;
+  width: 645px;
+  padding-left: 25px;
+}
+
+div.content2 h1 { 
+  font-family: 'Segoe UI';
+  color: rgb(0, 163, 46);
+}
+
+div.content2 label{
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(0, 163, 46);
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.input-field2 , input#id_password1, input#id_password2{
+  border: none;
+  border-bottom: 4px solid rgb(0, 163, 46);
+  outline: none;
+  background-color: transparent;
+  width: 600px;
+  padding: 5px;
+  transition: background-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+.input-field2:focus, input#id_password1:focus, input#id_password1:focus {
+  background-color: white;
+  border-bottom-color: rgb(255, 234, 2);
+}
+
+div.content2 button{
+  margin-left: 250px;
+  font-family: 'Segoe UI';
+  font-weight: bolder;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(0, 163, 46);
+  border: 3px solid rgb(0, 163, 46);
+  border-radius: 2px;
+  color: white;
+  transition: background-color 0.4s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+div.content2 button:hover {
+  background-color: rgb(255, 234, 2);
+  border-color: rgb(255, 234, 2);
 }
 
 /*BACKGROUND*/
