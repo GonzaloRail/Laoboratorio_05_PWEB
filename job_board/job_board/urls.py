@@ -16,7 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.contrib.auth import views as auth_views
+from accounts import views
 
 urlpatterns = [
+    # ... otras URLs de tu proyecto ...
     path('admin/', admin.site.urls),
+    # URL para iniciar sesión
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+
+    # URL para cerrar sesión
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+
+    # URL para registrar un nuevo usuario
+    path('register/', views.register, name='register'),
 ]
+
+
