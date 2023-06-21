@@ -1,16 +1,308 @@
+/*BASE.html*/ 
+
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #337ab7;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  font-weight: bolder;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  color: rgb(0, 163, 46);
+  text-decoration: none;
+  border: 3px solid rgba(245, 222, 179, 0);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  transition: border-color 0.3s;
+  transition: color 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(255, 234, 2);
+  border-color: rgb(255, 234, 2);
+  color: white;
+}
+
+.container {
+  color: white;
+  width: 500px;
+  padding: 30px;
+  padding-top: 15px;
+  background: linear-gradient(to left top, rgb(59, 255, 115), #09f);
+  border: 6px solid white;
+  border-radius: 5px;
+}
+
+.container h1.firts-tittleContent {
+  color: rgb(0, 163, 46);
+  font-family: "Segoe UI";
+  font-weight: bolder;
+  font-size: 85px;
+}
+
+.container h1.firts-tittleContent span.s {
+  color: rgb(255, 234, 2);
+  font-size: 105px;
+}
+.custom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1.second-tittleContent {
+  font-family: "Segoe UI";
+  font-size: 23px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 span.cp {
+  color: rgb(255, 234, 2);
+  font-size: 35px;
+}
+
+h1 span.cp2 {
+  color: rgb(0, 163, 46);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+/*register.html*/
+
+.custom-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  height: 100vh;
+}
+
+div.content {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgb(0, 163, 46);
+  border-radius: 8px;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  height: 720px;
+  width: 645px;
+  position: absolute;
+}
+
+div.content h1 { 
+  margin-top: -55px;
+  font-family: 'Segoe UI';
+  color: rgb(0, 163, 46);
+}
+
+div.content label {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(0, 163, 46);
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  margin-left: -65px;
+  margin-bottom: 5px;
+}
+
+.input-field , input#id_password1, input#id_password2{
+  border: none;
+  border-bottom: 4px solid rgb(0, 163, 46);
+  outline: none;
+  background-color: transparent;
+  margin-left: -60px;
+  width: 600px;
+  padding: 5px;
+  transition: background-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+.input-field:focus, input#id_password1:focus, input#id_password1:focus {
+  background-color: white;
+  border-bottom-color: rgb(255, 234, 2);
+}
+
+div.content button {
+  font-family: 'Segoe UI';
+  font-weight: bolder;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(0, 163, 46);
+  border: 3px solid rgb(0, 163, 46);
+  border-radius: 2px;
+  color: white;
+  transition: background-color 0.4s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+div.content button:hover {
+  background-color: rgb(255, 234, 2);
+  border-color: rgb(255, 234, 2);
+}
+
+div.content ul li {
+  font-weight: bold;
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  color: red;
+  transition: color 0.1s ease-in-out;
+}
+
+div.content ul li:hover {
+  color: rgb(255, 234, 2);
+}
+
+span.helptext {
+  font-weight: bold;
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  color: red;
+  transition: color 0.1s ease-in-out;
+}
+
+span.helptext:hover {
+  color: rgb(255, 234, 2);
+}
+
+/*login.html*/
+
+div.content2 {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgb(0, 163, 46);
+  border-radius: 8px;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  height: 330px;
+  width: 645px;
+  padding-left: 25px;
+}
+
+div.content2 h1 { 
+  font-family: 'Segoe UI';
+  color: rgb(0, 163, 46);
+}
+
+div.content2 label{
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(0, 163, 46);
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.input-field2 , input#id_password1, input#id_password2{
+  border: none;
+  border-bottom: 4px solid rgb(0, 163, 46);
+  outline: none;
+  background-color: transparent;
+  width: 600px;
+  padding: 5px;
+  transition: background-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+.input-field2:focus, input#id_password1:focus, input#id_password1:focus {
+  background-color: white;
+  border-bottom-color: rgb(255, 234, 2);
+}
+
+div.content2 button{
+  margin-left: 250px;
+  font-family: 'Segoe UI';
+  font-weight: bolder;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(0, 163, 46);
+  border: 3px solid rgb(0, 163, 46);
+  border-radius: 2px;
+  color: white;
+  transition: background-color 0.4s ease-in;
+  transition: border-color 0.2s ease-in;
+}
+
+div.content2 button:hover {
+  background-color: rgb(255, 234, 2);
+  border-color: rgb(255, 234, 2);
+}
+
+/*BACKGROUND*/
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
   }
-  
-  .button:hover {
-    background-color: #286090;
+  100% {
+    transform:translateX(25%);
   }
-  
-  .button.register {
-    margin-right: 10px;
-  }
+}
